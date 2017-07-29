@@ -1,0 +1,172 @@
+/*TABLE OF CONTENTS*/
+
+/*COLOR PALETTE*/
+/*UNIVERSAL SELECTOR*/
+/*ASIDE*/
+/*HEADER*/
+/*H1 DIV*/
+
+
+
+/*COLOR PALETTE*/
+/*http://paletton.com/#uid=62o0j0k8yK40h+M3yV4esvVkMpt*/
+
+/*UNIVERSAL SELECTOR*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*ASIDE*/
+
+aside {
+  width: 200px;
+  height: 100vh;
+  background-color: #A53A72;
+  display: inline-block;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+h2 {
+  text-align: center;
+}
+
+.headshot {
+  width: 200px;
+  margin-left: -27px;
+}
+
+.image-cropper {
+  margin: 25px auto;
+  width: 140px;
+  height: 140px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+/*HEADER*/
+
+header {
+  height: 200px;
+  width: 100%;
+  background-color: #FFFDFE;
+  position: relative;
+}
+
+.content {
+  height: 100vh;
+  width: calc(100% - 200px);
+  display: inline-block;
+  margin-left: 200px;
+}
+
+.search-div {
+  display: inline-block;
+  width: 85%;
+  height: 90px;
+  line-height: 90px;
+  margin-left: -4px;
+  border-bottom: 1px solid #C5B9BB;
+}
+
+.search {
+  width: 570px;
+  color: #7D7478;
+  border: none;
+}
+
+.hamburger-angle {
+  display: inline-block;
+}
+
+.hamburger-angle,
+.fa-plus-circle,
+.fa-calendar,
+.fa-th {
+  background-color: #FFFDFE;
+  color: #7D7478;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  border: 1px solid #C5B9BB;
+  border-top: 0px;
+}
+
+.fa-angle-left {
+  color: #ED002F;
+}
+
+.hamburger-angle {
+  border-left: 0px;
+}
+
+.fa-th {
+  border-right: 0px;
+}
+
+.hamburger-angle:hover,
+.fa-plus-circle:hover,
+.fa-calendar:hover,
+.fa-th:hover {
+  background-color: #ED002F;
+  color: #FFFDFE;
+  transition: background-color .3s;
+}
+
+.hamburger-angle:hover .fa-angle-left {
+  color: #C5B9BB;
+}
+
+.fa-plus-circle,
+.fa-calendar {
+  margin-right: -5px;
+}
+
+.absolute-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*H1 DIV*/
+
+nav {
+  background-color: #FFFDFE;
+  height: 50px;
+  width: 100%;
+}
+
+.graphs {
+  height: 300px;
+  width: 100%;
+  background-color: #F6DBE9;
+}
+
+.break {
+  height: 100px;
+  width: 100%;
+  background-color: #F6DBE9;
+}
+
+.text {
+  width: 100%;
+}
+
+.table {
+  width: 70%;
+  height: 100px;
+  display: inline-block;
+  background-color: #FFFDFE;
+  margin-right: -4px;
+}
+
+.links {
+  width: 30%;
+  height: 100px;
+  display: inline-block;
+  background-color: #F6DBE9;
+}
