@@ -6,6 +6,7 @@
 /*HEADER*/
 /*H1 DIV*/
 /*NAV*/
+/*GRAPHS*/
 
 /*MEDIA QUERIES*/
 
@@ -37,11 +38,10 @@ main {
   background-size: cover;
   background-attachment: fixed;
   background-position-x: -245px;
-  background-position-y: -27px;
 }
 
 h1 {
-  line-height: 220px;
+  margin-top: 255px;
   padding-left: 25px;
   display: inline-block;
   color: #fff;
@@ -53,7 +53,7 @@ h2 {
 
 hr {
   background-color: transparent;
-  border-top: 1px solid yellow;
+  border-top: 1px solid #ff0;
 }
 
 .headshot {
@@ -73,7 +73,7 @@ hr {
 /*HEADER*/
 
 header {
-  height: 270px;
+  height: 390px;
   width: 100%;
   position: relative;
 }
@@ -165,7 +165,7 @@ header {
   display: inline-block;
   color: #4D514B;
   position: absolute;
-  top: 125px;
+  top: 295px;
   left: 25px;
 }
 
@@ -181,7 +181,7 @@ header {
   display: inline-block;
   position: absolute;
   right: 0;
-  top: 97px;
+  top: 262px;
 }
 
 .h1-button {
@@ -215,7 +215,6 @@ header {
 /*NAV*/
 
 nav {
-  background-color: #FFFDFE;
   height: 50px;
   width: 100%;
 }
@@ -225,21 +224,103 @@ nav {
   line-height: 50px;
   width: 95px;
   text-align: center;
+  color: #fff;
 }
 
 .nav-bar li:hover {
   font-weight: 700;
-  border-bottom: 2px solid #ED002F;
+  border-bottom: 2px solid #ff0;
   transition: border-bottom .3s, font-weight .3s;
 }
 
-/*OTHER STUFF*/
+/*GRAPHS*/
 
 .graphs {
   height: 300px;
   width: 100%;
-  background-color: #F6DBE9;
+  background-color: rgba(0, 0, 0, .7);
+  display: flex;
 }
+
+.circle-graphs-div {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.bar-graph-div {
+  width: 40%;
+  position: relative;
+}
+
+.circle-graph {
+  box-sizing: border-box;
+  width: 130px;
+  height: 130px;
+  background-color: rgba(0, 0, 0, .7);
+  border-radius: 68px;
+  border: 5px solid #ff0;
+}
+
+.circle-graph-1 {
+  transform: rotate(45deg);
+  border-top-color: rgba(0, 0, 0, .7);
+}
+
+.circle-graph-2 {
+  transform: rotate(45deg);
+  border-top-color: rgba(0, 0, 0, .7);
+  border-right-color: rgba(0, 0, 0, .7);
+  border-bottom-color: rgba(0, 0, 0, .7);
+  position: relative;
+}
+
+.circle-graph-3 {
+  transform: rotate(45deg);
+  border-top-color: rgba(0, 0, 0, .7);
+  border-right-color: rgba(0, 0, 0, .7);
+}
+
+.graph-png {
+  width: 300px;
+  padding-top: 90px;
+  display: block;
+  margin: auto;
+}
+
+.circle-graph-button {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 112px;
+  right: -57px;
+}
+
+.circle-graph-text {
+  color: #ff0;
+  transform: rotate(-45deg);
+  text-align: center;
+}
+
+.circle-graph-text-top {
+  line-height: 110px;
+  font-size: 3em;
+}
+
+.circle-graph-text-bottom {
+  position: absolute;
+  top: 70px;
+  right: 14px;
+}
+
+.bar-graph-button {
+  top: 230px;
+  right: 131px;
+  position: absolute;
+}
+
+/*OTHER STUFF*/
 
 .break {
   height: 100px;
