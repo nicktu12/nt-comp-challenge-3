@@ -18,6 +18,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*ASIDE*/
@@ -33,7 +34,7 @@ aside {
 
 h1 {
   line-height: 110px;
-  padding-left: 57px;
+  padding-left: 25px;
   display: inline-block;
 }
 
@@ -151,11 +152,15 @@ header {
   color: #4D514B;
   position: absolute;
   top: 70px;
-  left: 58px;
+  left: 25px;
 }
 
 .favorites {
   color: #ED002F
+}
+
+.favorites:hover {
+  text-decoration: underline;
 }
 
 .h1-buttons-div {
@@ -200,6 +205,21 @@ nav {
   height: 50px;
   width: 100%;
 }
+
+.nav-bar li {
+  display: inline-block;
+  line-height: 50px;
+  width: 95px;
+  text-align: center;
+}
+
+.nav-bar li:hover {
+  font-weight: 700;
+  border-bottom: 2px solid #ED002F;
+  transition: border-bottom .3s, font-weight .3s;
+}
+
+/*OTHER STUFF*/
 
 .graphs {
   height: 300px;
