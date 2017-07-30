@@ -27,20 +27,33 @@
 aside {
   width: 200px;
   height: 100vh;
-  background-color: #A53A72;
   display: inline-block;
   box-sizing: border-box;
   position: fixed;
 }
 
+main {
+  background-image: url('assets/skrillex-background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-x: -245px;
+  background-position-y: -27px;
+}
+
 h1 {
-  line-height: 110px;
+  line-height: 220px;
   padding-left: 25px;
   display: inline-block;
+  color: #fff;
 }
 
 h2 {
   text-align: center;
+}
+
+hr {
+  background-color: transparent;
+  border-top: 1px solid yellow;
 }
 
 .headshot {
@@ -60,9 +73,8 @@ h2 {
 /*HEADER*/
 
 header {
-  height: 200px;
+  height: 270px;
   width: 100%;
-  background-color: #FFFDFE;
   position: relative;
 }
 
@@ -75,13 +87,14 @@ header {
 
 .search-div {
   display: inline-block;
-  height: 90px;
-  line-height: 90px;
+  height: 50px;
+  line-height: 50px;
   margin-left: -4px;
+  background-color: #FFFDFE;
 }
 
 .search {
-  width: 200px;
+  width: 599px;
   color: #7D7478;
   border: none;
 }
@@ -97,8 +110,8 @@ header {
   background-color: #FFFDFE;
   color: #7D7478;
   width: 90px;
-  height: 90px;
-  line-height: 90px;
+  height: 50px;
+  line-height: 50px;
   text-align: center;
   border: 1px solid #C5B9BB;
   border-top: 0px;
@@ -152,7 +165,7 @@ header {
   display: inline-block;
   color: #4D514B;
   position: absolute;
-  top: 70px;
+  top: 125px;
   left: 25px;
 }
 
@@ -168,7 +181,7 @@ header {
   display: inline-block;
   position: absolute;
   right: 0;
-  top: 41px;
+  top: 97px;
 }
 
 .h1-button {
@@ -255,7 +268,7 @@ nav {
 
 /*MEDIA QUERIES*/
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 880px) {
 
   aside {
     height: 200px;
@@ -297,5 +310,8 @@ nav {
     margin-left: 0px;
     width: 100vw;
   }
+
+  .search {
+    width: 150px;
 
 }
