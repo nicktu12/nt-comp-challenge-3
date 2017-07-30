@@ -5,6 +5,8 @@
 /*ASIDE*/
 /*HEADER*/
 /*H1 DIV*/
+/*NAV*/
+
 
 
 
@@ -27,6 +29,12 @@ aside {
   display: inline-block;
   box-sizing: border-box;
   position: fixed;
+}
+
+h1 {
+  line-height: 110px;
+  padding-left: 57px;
+  display: inline-block;
 }
 
 h2 {
@@ -65,15 +73,13 @@ header {
 
 .search-div {
   display: inline-block;
-  width: 85%;
   height: 90px;
   line-height: 90px;
   margin-left: -4px;
-  border-bottom: 1px solid #C5B9BB;
 }
 
 .search {
-  width: 570px;
+  width: 200px;
   color: #7D7478;
   border: none;
 }
@@ -94,6 +100,7 @@ header {
   text-align: center;
   border: 1px solid #C5B9BB;
   border-top: 0px;
+  border-bottom: 0px;
 }
 
 .fa-angle-left {
@@ -133,6 +140,60 @@ header {
 }
 
 /*H1 DIV*/
+
+.h1-div {
+  position: relative;
+  border-top: 1px solid #C5B9BB;
+}
+
+.location {
+  display: inline-block;
+  color: #4D514B;
+  position: absolute;
+  top: 70px;
+  left: 58px;
+}
+
+.favorites {
+  color: #ED002F
+}
+
+.h1-buttons-div {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 41px;
+}
+
+.h1-button {
+  background-color: #FFFDFE;
+  vertical-align: middle;
+  height: 30px;
+  border-radius: 20px;
+  border: 2px solid #C5B9BB;
+}
+
+.h1-active-button {
+  width: 80px;
+  color: #4D514B;
+}
+
+.fa-circle {
+  color: #95A817;
+}
+
+.fa-bookmark-o,
+.fa-pencil-square-o,
+.fa-trash-o {
+  color: #4D514B;
+}
+
+
+.h1-circle-button {
+  width: 30px;
+}
+
+/*NAV*/
 
 nav {
   background-color: #FFFDFE;
