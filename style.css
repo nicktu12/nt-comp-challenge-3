@@ -168,7 +168,8 @@ header {
   line-height: 50px;
   margin-left: -4px;
   background-color: #FFFDFE;
-  position: relative;
+  position: absolute;
+  left: 95px;
 }
 
 .search {
@@ -191,6 +192,7 @@ header {
 .fa-th {
   background-color: #FFFDFE;
   color: #7D7478;
+  font-size: 1.2em;
   width: 90px;
   height: 50px;
   line-height: 50px;
@@ -268,7 +270,7 @@ header {
 .h1-buttons-div {
   display: inline-block;
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 257px;
 }
 
@@ -353,7 +355,7 @@ nav {
   box-sizing: border-box;
   width: 130px;
   height: 130px;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(255, 255, 255, .1);
   border-radius: 68px;
   border: 5px solid #ff0;
 }
@@ -499,10 +501,31 @@ h5 ~ p {
 }
 
 .links button {
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0);
   width: 80%;
   display: block;
   padding: 10px;
   margin: 20px auto;
+  color: white;
+  border-radius: 4px;
+}
+
+.links button:hover {
+  border: 2px solid #ff0;
+  transition: border .3s;
+}
+
+.links .links-facebook-button {
+  background-color: #4A6FC0;
+}
+
+.links .links-twitter-button {
+  background-color: #569FC9;
+}
+
+.links .links-soundcloud-button {
+  background-color: #FF5500;
 }
 
 .links-div {
