@@ -9,6 +9,7 @@
 /*GRAPHS*/
 /*BREAK*/
 /*TABLE*/
+/*LINKS*/
 
 /*OTHER STUFF*/
 
@@ -360,9 +361,10 @@ table {
 
 .table {
   width: 70%;
+  height: 100%;
   display: inline-block;
   background-color: rgba(0, 0, 0, .7);
-  margin-right: -4px;
+  box-sizing: border-box;
 }
 
 .description-div {
@@ -376,21 +378,40 @@ table {
 
 .description-td {
   position: absolute;
-  top: 960px;
+  top: 214px;
 }
 
-/*OTHER STUFF*/
+/*LINKS*/
 
+h5,
+h5 ~ p {
+  color: #fff;
+}
 
 .text {
   width: 100%;
+  position: relative;
 }
 
 .links {
   width: 30%;
-  height: 100px;
+  height: 100%;
   display: inline-block;
-  background-color: #F6DBE9;
+  background-color: rgba(0, 0, 0, .7);
+  position: absolute;
+  top: 0;
+}
+
+.links button {
+  width: 80%;
+  display: block;
+  padding: 10px;
+  margin: 20px;
+}
+
+.links-div {
+  box-sizing: border-box;
+  margin: 20px;
 }
 
 /*MEDIA QUERIES*/
