@@ -3,6 +3,7 @@
 /*COLOR PALETTE*/
 /*UNIVERSAL SELECTOR*/
 /*ASIDE*/
+/*CHECKBOXES*/
 /*HEADER*/
 /*H1 DIV*/
 /*NAV*/
@@ -33,6 +34,7 @@ aside {
   display: inline-block;
   box-sizing: border-box;
   position: fixed;
+  overflow: auto;
 }
 
 main {
@@ -53,25 +55,32 @@ h2 {
   text-align: center;
 }
 
+h2 i {
+  color: #ff0;
+}
+
 hr {
   background-color: transparent;
-  border-top: 1px solid #ff0;
+  border-top: 2px solid #ff0;
   width: 90%;
   margin: auto;
 }
 
 h4 {
   margin: 10px 0px 10px 20px;
+  color: #fff;
 }
 
 h4 ~ ul li {
-  margin: 10px 0px 10px 20px;
+  margin: 10px 0px 10px 11px;
   list-style-type: none;
+  color: #fff;
 }
 
 h4 ~ ul li i {
-  display: red;
   width: 30px;
+  color: #fff;
+  text-align: center;
 }
 
 .headshot {
@@ -88,6 +97,51 @@ h4 ~ ul li i {
   border-radius: 50%;
 }
 
+/*CHECKBOXES*/
+
+li input[type="checkbox"] {
+    opacity: 0;
+}
+
+li label {
+    position: relative;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+li label::before,
+li label::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+}
+
+li label::before{
+    height: 16px;
+    width: 16px;
+    border: 1px solid;
+    left: -10px;
+    top: 3px;
+}
+
+li label::after {
+    height: 5px;
+    width: 9px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(-45deg);
+    left: -6px;
+    top: 7px;
+}
+
+li input[type="checkbox"] + label::after {
+    content: none;
+}
+
+li input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+
 /*HEADER*/
 
 header {
@@ -97,7 +151,6 @@ header {
 }
 
 .content {
-  height: 100vh;
   width: calc(100% - 200px);
   display: inline-block;
   margin-left: 200px;
@@ -137,7 +190,7 @@ header {
 }
 
 .fa-angle-left {
-  color: #ED002F;
+  color: #ff0;
 }
 
 .hamburger-angle {
@@ -188,7 +241,7 @@ header {
 }
 
 .favorites {
-  color: #ED002F
+  color: #F45D60
 }
 
 .favorites:hover {
@@ -302,17 +355,18 @@ nav {
 }
 
 .graph-png {
-  width: 300px;
-  padding-top: 90px;
+  width: 250px;
+  padding-top: 32px;
   display: block;
   margin: auto;
 }
 
 .circle-graph-button {
   transform: rotate(-45deg);
+  width: 115px;
   position: absolute;
-  top: 112px;
-  right: -57px;
+  top: 138px;
+  right: -91px;
 }
 
 .circle-graph-text {
@@ -333,7 +387,7 @@ nav {
 }
 
 .bar-graph-button {
-  width: 60px;
+  width: 140px;
   display: block;
   margin: 19px auto;
 }
@@ -353,7 +407,7 @@ nav {
 .fa-angle-up {
   color: #ff0;
   position: absolute;
-  top: -20px;
+  top: -8px;
 }
 
 .break hr {
@@ -390,7 +444,7 @@ table {
 
 .description-td {
   position: absolute;
-  top: 214px;
+  top: 215px;
 }
 
 /*LINKS*/
@@ -402,7 +456,7 @@ h5 ~ p {
 
 .text {
   width: 100%;
-  height: 100%;
+  display: flex;
   position: relative;
   background-color: rgba(0, 0, 0, .7);
 }
@@ -410,8 +464,6 @@ h5 ~ p {
 .links {
   width: 30%;
   display: inline-block;
-  position: absolute;
-  top: 0;
 }
 
 .links button {
