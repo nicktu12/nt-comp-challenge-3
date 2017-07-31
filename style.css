@@ -8,6 +8,7 @@
 /*NAV*/
 /*GRAPHS*/
 /*BREAK*/
+/*TABLE*/
 
 /*OTHER STUFF*/
 
@@ -318,9 +319,9 @@ nav {
 }
 
 .bar-graph-button {
-  top: 230px;
-  right: 131px;
-  position: absolute;
+  width: 60px;
+  display: block;
+  margin: 19px auto;
 }
 
 /*BREAK*/
@@ -345,19 +346,44 @@ nav {
   width: 90%;
 }
 
+/*TABLE*/
+
+td {
+  height: 55px;
+  padding: 0px 25px;
+}
+
+table {
+  margin: 20px;
+  background-color: #fff;
+}
+
+.table {
+  width: 70%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, .7);
+  margin-right: -4px;
+}
+
+.description-div {
+  height: 200px;
+  overflow: auto;
+}
+
+.description-tr {
+  position: relative;
+}
+
+.description-td {
+  position: absolute;
+  top: 960px;
+}
+
 /*OTHER STUFF*/
 
 
 .text {
   width: 100%;
-}
-
-.table {
-  width: 70%;
-  height: 100px;
-  display: inline-block;
-  background-color: #FFFDFE;
-  margin-right: -4px;
 }
 
 .links {
