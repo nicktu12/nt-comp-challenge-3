@@ -10,9 +10,6 @@
 /*BREAK*/
 /*TABLE*/
 /*LINKS*/
-
-/*OTHER STUFF*/
-
 /*MEDIA QUERIES*/
 
 
@@ -99,7 +96,7 @@ header {
 }
 
 .search {
-  width: calc(100vw - 315px);
+  width: calc(99vw - 315px);
   color: #7D7478;
   border: none;
 }
@@ -363,7 +360,6 @@ table {
   width: 70%;
   height: 100%;
   display: inline-block;
-  background-color: rgba(0, 0, 0, .7);
   box-sizing: border-box;
 }
 
@@ -391,13 +387,14 @@ h5 ~ p {
 .text {
   width: 100%;
   position: relative;
+  background-color: rgba(0, 0, 0, .7);
+  overflow: auto;
 }
 
 .links {
   width: 30%;
   height: 100%;
   display: inline-block;
-  background-color: rgba(0, 0, 0, .7);
   position: absolute;
   top: 0;
 }
@@ -406,12 +403,34 @@ h5 ~ p {
   width: 80%;
   display: block;
   padding: 10px;
-  margin: 20px;
+  margin: 20px auto;
 }
 
 .links-div {
   box-sizing: border-box;
   margin: 20px;
+  position: relative;
+}
+
+.link-text {
+  display: inline-block;
+  margin: 20px 0px;
+  line-height: 40px;
+  background-color: #fff;
+  width: 80%;
+  color: black;
+  overflow: scroll;
+}
+
+.links-div button {
+  width: 20%;
+  height: 40px;
+  display: inline-block;
+  padding: initial;
+  position: absolute;
+  right: 0;
+  background-color: green;
+  border: none;
 }
 
 /*MEDIA QUERIES*/
