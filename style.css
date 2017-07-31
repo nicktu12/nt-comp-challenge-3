@@ -83,6 +83,12 @@ h4 ~ ul li i {
   text-align: center;
 }
 
+h4 ~ ul li:hover i,
+h4 ~ ul li:hover {
+  color: #ff0;
+  transition: color .3s;
+}
+
 .headshot {
   width: 200px;
   margin-left: -27px;
@@ -194,6 +200,10 @@ header {
   border-bottom: 0px;
 }
 
+.fa-search {
+  color: #7D7478
+}
+
 
 .hamburger-angle {
   border-left: 0px;
@@ -212,13 +222,14 @@ header {
 .fa-plus-circle:hover,
 .fa-calendar:hover,
 .fa-th:hover {
-  background-color: #ED002F;
-  color: #FFFDFE;
+  background-color: #ff0;
+  color: #000;
   transition: background-color .3s;
 }
 
 .hamburger-angle:hover .fa-angle-left {
-  color: #C5B9BB;
+  color: #000;
+  transition: color .3s;
 }
 
 .fa-plus-circle,
@@ -240,7 +251,7 @@ header {
 
 .location {
   display: inline-block;
-  color: #4D514B;
+  color: #C5b9BB;
   position: absolute;
   top: 295px;
   left: 25px;
@@ -476,6 +487,15 @@ h5 ~ p {
 .links {
   width: 30%;
   display: inline-block;
+  position: relative;
+}
+
+.links button i {
+  position: absolute;
+  left: 25px;
+  margin-top: 2px;
+  text-align: center;
+  width: 30px;
 }
 
 .links button {
