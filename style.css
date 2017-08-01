@@ -26,6 +26,14 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+main {
+  background-image: url('assets/skrillex-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: -245px;
+}
+
 /*ASIDE*/
 
 aside {
@@ -35,13 +43,6 @@ aside {
   box-sizing: border-box;
   position: fixed;
   overflow: auto;
-}
-
-main {
-  background-image: url('assets/skrillex-background.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position-x: -245px;
 }
 
 h1 {
@@ -659,7 +660,7 @@ h5 ~ p {
 @media only screen and (max-width: 880px) {
 
   aside {
-    height: 200px;
+    height: 211px;
     width: 100vw;
     position: static;
     background-color: #ff0;
@@ -674,12 +675,24 @@ h5 ~ p {
   h4 {
     display: inline-block;
     font-size: 1em;
+    margin: 10px 0px 10px 20px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,.7);
+    font-weight: bold;
+    position: relative;
   }
 
   h2:hover,
   h4:hover {
     color: #FFFDFE;
     transition: color .3s;
+  }
+
+  .fa-angle-down {
+    position: absolute;
+    left: 133px;
+    bottom: -11px;
+    color: black;
   }
 
   h4 ~ ul {
