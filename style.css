@@ -62,8 +62,9 @@ h2 i {
 }
 
 hr {
-  background-color: transparent;
-  border-top: 2px solid #ff0;
+  border: 0;
+  height: 1px;
+  background-color: #ff0;
   width: 90%;
   margin: auto;
 }
@@ -467,15 +468,55 @@ table {
   background-color: rgba(255, 255, 255, .7);
 }
 
+.table-hr {
+  width: 70%;
+  position: absolute;
+  left: 15%;
+  border: 0px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.table-hr-1 {
+  top: 100px;
+}
+
+.table-hr-2 {
+  top: 155px;
+}
+
+.table-hr-3 {
+  top: 215px;
+}
+
+.table-hr-4 {
+  top: 455px;
+}
+
+.table-hr-5 {
+  top: 512px;
+}
+
+.table-hr-6 {
+  top: 569px;
+}
+
+.table-hr-7 {
+  top: 626px;
+}
+
 .table {
   width: 70%;
   height: 100%;
   display: inline-block;
   box-sizing: border-box;
+  position: relative;
 }
 
 .description-div {
+  box-sizing: border-box;
   height: 200px;
+  margin: 19.5px 0px;
   overflow: auto;
 }
 
@@ -485,7 +526,14 @@ table {
 
 .description-td {
   position: absolute;
-  top: 215px;
+  top: 238px;
+  font-size: .8em;
+}
+
+.table-key {
+  font-size: .8em;
+  min-width: 97px;
+  padding-right: 0px;
 }
 
 /*LINKS*/
