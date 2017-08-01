@@ -49,10 +49,12 @@ h1 {
   padding-left: 25px;
   display: inline-block;
   color: #fff;
+  font-weight: lighter;
 }
 
 h2 {
   text-align: center;
+  font-weight: normal;
 }
 
 h2 i {
@@ -68,13 +70,19 @@ hr {
 
 h4 {
   margin: 10px 0px 10px 20px;
-  color: #fff;
+  color: #D3D3C6;
 }
 
 h4 ~ ul li {
   margin: 10px 0px 10px 11px;
   list-style-type: none;
   color: #fff;
+}
+
+ul li {
+  font-weight: lighter;
+  font-size: .8em;
+  opacity: .75;
 }
 
 h4 ~ ul li i {
@@ -86,7 +94,9 @@ h4 ~ ul li i {
 h4 ~ ul li:hover i,
 h4 ~ ul li:hover {
   color: #ff0;
-  transition: color .3s;
+  opacity: 1;
+  transition: color .3s, opacity .3;
+  cursor: pointer;
 }
 
 .headshot {
@@ -95,7 +105,7 @@ h4 ~ ul li:hover {
 }
 
 .image-cropper {
-  margin: 25px auto;
+  margin: 14px auto;
   width: 140px;
   height: 140px;
   position: relative;
@@ -126,8 +136,8 @@ li label::before{
     height: 16px;
     width: 16px;
     border: 1px solid;
-    left: -10px;
-    top: 3px;
+    left: -9px;
+    top: 0px;
 }
 
 li label::after {
@@ -136,8 +146,8 @@ li label::after {
     border-left: 2px solid;
     border-bottom: 2px solid;
     transform: rotate(-45deg);
-    left: -6px;
-    top: 7px;
+    left: -5px;
+    top: 4px;
 }
 
 li input[type="checkbox"] + label::after {
@@ -180,6 +190,7 @@ header {
   left: 35px;
   top: 0px;
   border: none;
+  font-size: .8em;
 }
 
 .hamburger-angle {
@@ -206,7 +217,6 @@ header {
   color: #7D7478
 }
 
-
 .hamburger-angle {
   border-left: 0px;
   border-right: 2px solid #C5b9BB;
@@ -226,11 +236,13 @@ header {
 .fa-th:hover {
   background-color: #ff0;
   color: #000;
+  cursor: pointer;
   transition: background-color .3s;
 }
 
 .hamburger-angle:hover .fa-angle-left {
   color: #000;
+  cursor: pointer;
   transition: color .3s;
 }
 
@@ -265,6 +277,7 @@ header {
 
 .favorites:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .h1-buttons-div {
@@ -286,6 +299,7 @@ header {
 .h1-button:hover {
   background-color: rgba(255, 255, 255, 1);
   transition: background-color .3s;
+  cursor: pointer;
 }
 
 .h1-active-button {
@@ -321,10 +335,12 @@ nav {
   width: 95px;
   text-align: center;
   color: #fff;
+  font-size: .9em;
 }
 
 .nav-bar li:hover {
   font-weight: 700;
+  cursor: pointer;
   border-bottom: 2px solid #ff0;
   transition: border-bottom .3s, font-weight .3s;
 }
@@ -448,7 +464,7 @@ td {
 
 table {
   margin: 20px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, .7);
 }
 
 .table {
@@ -513,6 +529,7 @@ h5 ~ p {
 
 .links button:hover {
   border: 2px solid #ff0;
+  cursor: pointer;
   transition: border .3s;
 }
 
