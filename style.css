@@ -1010,6 +1010,10 @@ h5 ~ p {
     margin: 10px 0px 10px 0px
   }
 
+  .description-td {
+    top: 239px;
+  }
+
   .aside-headers {
     margin: 0px 2% 0px 2%;
   }
@@ -1066,6 +1070,34 @@ h5 ~ p {
 
   .links-link-container {
     top: 84%;
+  }
+
+  .table-hr-1 {
+    top: 106px;
+  }
+
+  .table-hr-2 {
+    top: 161px;
+  }
+
+  .table-hr-3 {
+    top: 218px;
+  }
+
+  .table-hr-4 {
+    top: 451px;
+  }
+
+  .table-hr-5 {
+    top: 511px;
+  }
+
+  .table-hr-6 {
+    top: 588px;
+  }
+
+  .table-hr-7 {
+    top: 642px;
   }
 
 }
