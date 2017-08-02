@@ -60,6 +60,7 @@ h1 {
 h2 {
   text-align: center;
   font-weight: normal;
+  padding-bottom: 7px;
 }
 
 h2 i {
@@ -195,8 +196,28 @@ header {
   line-height: 50px;
   left: 35px;
   top: 0px;
+  color: #000;
   border: none;
-  font-size: .8em;
+  font-size: .9em;
+  margin-left: -5px;
+}
+
+.search-div:hover .search {
+  background-color: #ff0;
+  transition: background-color .3s, color .3s;
+}
+
+.search-div:hover {
+  background-color: #ff0;
+  transition: background-color .3s, color .3s;
+}
+
+.search-div:hover i {
+  color: #000;
+}
+
+.search-div:hover input::placeholder {
+  color: #000;
 }
 
 .search:focus {
@@ -346,6 +367,7 @@ nav {
   text-align: center;
   color: #fff;
   font-size: .9em;
+  box-sizing: border-box;
 }
 
 .nav-bar li:hover {
@@ -688,6 +710,7 @@ h5 ~ p {
     color: rgba(0,0,0,.7);
     font-weight: bold;
     position: relative;
+    padding-bottom: 0;
   }
 
   h2:hover,
@@ -847,7 +870,7 @@ h5 ~ p {
   }
 
   .search {
-    width: calc(100vw - 126px);
+    width: calc(100vw - 120px);
   }
 
   nav {
