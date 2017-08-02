@@ -340,12 +340,17 @@ header {
 
 .fa-circle {
   color: #95A817;
+  padding-right: 5px;
 }
 
 .fa-bookmark-o,
 .fa-pencil-square-o,
 .fa-trash-o {
   color: #4D514B;
+}
+
+.fa-map-marker {
+  padding-right: 5px;
 }
 
 
@@ -494,9 +499,38 @@ td {
   padding: 0px 25px;
 }
 
+th {
+  background-color: rgba(0, 0, 0, .7);
+  line-height: 30px;
+  color: rgba(255, 255, 255, .7);
+  font-weight: normal;
+}
+
 table {
   margin: 20px;
   background-color: rgba(255, 255, 255, .7);
+  border-collapse: collapse;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, .9);
+}
+
+.table-head-left {
+  padding-left: 8px;
+}
+
+.table-head-right {
+  height: 40px;
+  padding-left: 24px;
+}
+
+.fa-pencil {
+  padding-right: 5px;
+}
+
+.table-head-right p {
+  background-color: rgba(255, 255, 255, .2);
+  width: 75px;
+  border-radius: 4px;
 }
 
 .table-hr {
@@ -508,32 +542,48 @@ table {
   background-color: rgba(0, 0, 0, .1);
 }
 
+.owsla-logo {
+  height: 60px;
+  margin: 10px 0px 5px 0px;
+}
+
+.owsla-td {
+  position: relative;
+}
+
+.owsla-p {
+  display: inline-block;
+  position: absolute;
+  top: 32px;
+  padding-left: 5px;
+}
+
 .table-hr-1 {
-  top: 100px;
+  top: 115px;
 }
 
 .table-hr-2 {
-  top: 155px;
+  top: 170px;
 }
 
 .table-hr-3 {
-  top: 215px;
+  top: 227px;
 }
 
 .table-hr-4 {
-  top: 455px;
+  top: 467px;
 }
 
 .table-hr-5 {
-  top: 512px;
+  top: 520px;
 }
 
 .table-hr-6 {
-  top: 569px;
+  top: 601px;
 }
 
 .table-hr-7 {
-  top: 626px;
+  top: 653px;
 }
 
 .table {
@@ -561,7 +611,7 @@ table {
 
 .description-td {
   position: absolute;
-  top: 238px;
+  top: 247px;
   font-size: .8em;
 }
 
@@ -569,6 +619,10 @@ table {
   font-size: .8em;
   min-width: 97px;
   padding-right: 0px;
+}
+
+.bold-td {
+  font-weight: bold;
 }
 
 /*LINKS*/
@@ -661,7 +715,7 @@ h5 ~ p {
 
 .copy-link .link-text {
   display: inline-block;
-  margin: 20px 0px;
+  margin: 6px 0px;
   line-height: 40px;
   background-color: rgba(255,255,255,.7);
   width: 77%;
@@ -679,10 +733,14 @@ h5 ~ p {
   padding: initial;
   position: absolute;
   right: 0;
-  background-color: rgba(0,128,0,.7);
+  background-color: rgba(244, 93, 96,.7);
   color: rgba(255,255,255,.7);
   border: none;
   border-radius: 0 4px 4px 0;
+}
+
+.copy-link button {
+  margin: 6px auto;
 }
 
 /*MEDIA QUERIES*/
@@ -935,7 +993,7 @@ h5 ~ p {
 
   .links-div {
     width: 94%;
-    padding-bottom: 60px;
+    padding-bottom: 44px;
     height: initial;
     margin-bottom: 0;
   }
