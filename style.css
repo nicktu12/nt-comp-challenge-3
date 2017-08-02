@@ -34,6 +34,10 @@ main {
   background-position-x: -245px;
 }
 
+button:focus {
+  outline: 0;
+}
+
 /*ASIDE*/
 
 aside {
@@ -193,6 +197,10 @@ header {
   top: 0px;
   border: none;
   font-size: .8em;
+}
+
+.search:focus {
+  outline: 0;
 }
 
 .hamburger-angle {
@@ -690,7 +698,7 @@ h5 ~ p {
 
   .fa-angle-down {
     position: absolute;
-    left: 133px;
+    left: 31px;
     bottom: -11px;
     color: black;
   }
@@ -700,7 +708,7 @@ h5 ~ p {
   }
 
   .aside-headers {
-    margin: 0px 200px 0px 200px;
+    margin: 0px 18% 0px 18%;
     display: flex;
     justify-content: space-between;
   }
@@ -708,7 +716,8 @@ h5 ~ p {
   .content {
     margin-left: 0px;
     margin-top: -4px;
-    width: 100vw;
+    width: 100%;
+    overflow: hidden;
   }
 
 }
@@ -796,6 +805,129 @@ h5 ~ p {
 
   .bar-graph-button {
     margin: 27px auto 10px auto;
+  }
+
+  .links-link-container button {
+    width: 38px;
+    height: 38px;
+    border-radius: 20px;
+  }
+
+  .links button i {
+    position: absolute;
+    left: 2px;
+  }
+
+  .links button p {
+    visibility: hidden;
+  }
+
+  .links-social-button {
+    position: relative;
+  }
+
+  .links .links-facebook-button {
+    margin-right: -40px;
+  }
+
+  .links .links-soundcloud-button {
+    margin-left: -40px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .graph-png {
+    width: 60%;
+  }
+
+  .absolute-top-right {
+    visibility: hidden;
+  }
+
+  .search {
+    width: calc(100vw - 126px);
+  }
+
+  nav {
+    visibility: hidden;
+  }
+
+  header {
+    height: 190px;
+  }
+
+  h1 {
+    margin-top: 42px;
+    font-size: 1.5em;
+  }
+
+  table {
+    margin: 10px;
+  }
+
+  h2,
+  h4 {
+    margin: 10px 0px 10px 0px
+  }
+
+  .aside-headers {
+    margin: 0px 2% 0px 2%;
+  }
+
+  .location {
+    top: 83px;
+    font-size: .9em;
+  }
+
+  .h1-buttons-div {
+    top: 130px;
+    width: 320px;
+    left: 0;
+  }
+
+  .bar-graph-div {
+    width: 100%;
+  }
+
+  .circle-graphs-div {
+    flex-direction: column;
+    padding-top: 5px;
+  }
+
+  .circle-graph-button {
+    top: 235px;
+    right: -207px;
+  }
+
+  .circle-graph {
+    margin: 20px;
+  }
+
+  .links-div-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links-div {
+    width: 94%;
+    padding-bottom: 60px;
+    height: initial;
+    margin-bottom: 0;
+  }
+
+  .links {
+    height: initial;
+    padding-bottom: 80px;
+  }
+
+  .copy-link {
+    bottom: -10px;
+  }
+
+  .links-link-container {
+    top: 84%;
   }
 
 }
