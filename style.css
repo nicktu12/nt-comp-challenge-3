@@ -45,7 +45,6 @@ aside {
   height: 100vh;
   display: inline-block;
   box-sizing: border-box;
-  position: fixed;
   overflow: auto;
 }
 
@@ -81,9 +80,11 @@ h4 {
 }
 
 h4 ~ ul li {
-  margin: 10px 0px 10px 11px;
+  margin: 6px 0px 4px 11px;
   list-style-type: none;
   color: #fff;
+  padding-top: 4px;
+  padding-bottom: 6px;
 }
 
 ul li {
@@ -102,8 +103,8 @@ h4 ~ ul li:hover i,
 h4 ~ ul li:hover {
   color: #ff0;
   opacity: 1;
-  transition: color .3s, opacity .3;
   cursor: pointer;
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .headshot {
@@ -303,7 +304,7 @@ header {
 }
 
 .favorites {
-  color: #F45D60
+  color: #F45D60;
 }
 
 .favorites:hover {
@@ -555,6 +556,12 @@ table {
   border-radius: 4px;
 }
 
+.table-head-right p:hover {
+  background-color: rgba(255, 255, 255, .5);
+  color: #ff0;
+  transition: background-color .3s, color .3s;
+}
+
 .table-hr {
   width: 70%;
   position: absolute;
@@ -668,12 +675,20 @@ h5 ~ p {
   position: relative;
 }
 
+.links-div i {
+  padding-right: 5px;
+}
+
 .links button i {
   position: absolute;
-  left: 25px;
-  margin-top: 2px;
+  left: 12%;
+  margin-top: 4px;
   text-align: center;
   width: 30px;
+}
+
+.links button p {
+  font-size: 1.2em;
 }
 
 .links button {
@@ -723,7 +738,7 @@ h5 ~ p {
 
 .links-div {
   box-sizing: border-box;
-  margin: 20px;
+  margin: 11%;
   position: relative;
 }
 
@@ -1008,8 +1023,8 @@ h5 ~ p {
   }
 
   .circle-graph-button {
-    top: 235px;
-    right: -207px;
+    top: 230px;
+    right: -224px;
   }
 
   .circle-graph {
