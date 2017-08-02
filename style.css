@@ -41,25 +41,36 @@ button:focus {
 /*ASIDE*/
 
 aside {
+  position: fixed;
+  display: inline-block;
+  overflow: auto;
   width: 200px;
   height: 100vh;
-  display: inline-block;
   box-sizing: border-box;
-  overflow: auto;
 }
 
 h1 {
+  display: inline-block;
   margin-top: 255px;
   padding-left: 25px;
-  display: inline-block;
   color: #fff;
   font-weight: lighter;
 }
 
 h2 {
+  padding-bottom: 7px;
   text-align: center;
   font-weight: normal;
-  padding-bottom: 7px;
+}
+
+h2:hover {
+  color: #ff0;
+  transition: color .3s;
+}
+
+h2:hover i {
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+  transition: text-shadow .3s;
 }
 
 h2 i {
@@ -69,9 +80,9 @@ h2 i {
 hr {
   border: 0;
   height: 1px;
-  background-color: #ff0;
   width: 90%;
   margin: auto;
+  background-color: #ff0;
 }
 
 h4 {
@@ -81,10 +92,10 @@ h4 {
 
 h4 ~ ul li {
   margin: 6px 0px 4px 11px;
-  list-style-type: none;
-  color: #fff;
   padding-top: 4px;
   padding-bottom: 6px;
+  list-style-type: none;
+  color: #fff;
 }
 
 ul li {
@@ -95,8 +106,8 @@ ul li {
 
 h4 ~ ul li i {
   width: 30px;
-  color: #fff;
   text-align: center;
+  color: #fff;
 }
 
 h4 ~ ul li:hover i,
@@ -113,10 +124,10 @@ h4 ~ ul li:hover {
 }
 
 .image-cropper {
+  position: relative;
   margin: 14px auto;
   width: 140px;
   height: 140px;
-  position: relative;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -169,38 +180,38 @@ li input[type="checkbox"]:checked + label::after {
 /*HEADER*/
 
 header {
+  position: relative;
   height: 390px;
   width: 100%;
-  position: relative;
 }
 
 .content {
-  width: calc(100% - 200px);
   display: inline-block;
+  width: calc(100% - 200px);
   margin-left: 200px;
 }
 
 .search-div {
   display: inline-block;
+  position: absolute;
+  left: 95px;
   height: 50px;
   line-height: 50px;
   margin-left: -4px;
   background-color: #FFFDFE;
-  position: absolute;
-  left: 95px;
 }
 
 .search {
+  position: absolute;
+  top: 0px;
+  left: 35px;
+  margin-left: -5px;
   width: calc(99vw - 320px);
   color: #7D7478;
-  position: absolute;
   line-height: 50px;
-  left: 35px;
-  top: 0px;
   color: #000;
   border: none;
   font-size: .9em;
-  margin-left: -5px;
 }
 
 .search-div:hover .search {
@@ -233,11 +244,11 @@ header {
 .fa-plus-circle,
 .fa-calendar,
 .fa-th {
+  width: 90px;
+  height: 50px;
   background-color: #FFFDFE;
   color: #7D7478;
   font-size: 1.2em;
-  width: 90px;
-  height: 50px;
   line-height: 50px;
   text-align: center;
   border: 1px solid #C5B9BB;
@@ -296,11 +307,11 @@ header {
 }
 
 .location {
-  display: inline-block;
-  color: #C5b9BB;
   position: absolute;
   top: 295px;
   left: 28px;
+  display: inline-block;
+  color: #C5b9BB;
 }
 
 .favorites {
@@ -313,10 +324,10 @@ header {
 }
 
 .h1-buttons-div {
-  display: inline-block;
   position: absolute;
   right: 10px;
   top: 257px;
+  display: inline-block;
 }
 
 .h1-buttons-div button {
@@ -324,13 +335,13 @@ header {
 }
 
 .h1-button {
-  background-color: rgba(255, 255, 255, .2);
-  vertical-align: middle;
   height: 40px;
   border-radius: 32px;
   border: 2px solid #C5B9BB;
-  color: rgba(197,185,187,.7);
   margin: 0px 10px;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, .2);
+  color: rgba(197,185,187,.7);
   font-size: 0.8em
 }
 
@@ -347,8 +358,8 @@ header {
 }
 
 .fa-circle {
-  color: #95A817;
   padding-right: 5px;
+  color: #95A817;
 }
 
 .fa-bookmark-o,
@@ -390,12 +401,12 @@ nav {
 
 .nav-bar li {
   display: inline-block;
-  line-height: 50px;
+  box-sizing: border-box;
   width: 95px;
   text-align: center;
   color: #fff;
+  line-height: 50px;
   font-size: .9em;
-  box-sizing: border-box;
 }
 
 .nav-bar li:hover {
@@ -408,23 +419,23 @@ nav {
 /*GRAPHS*/
 
 .graphs {
+  display: flex;
   height: 300px;
   width: 100%;
   background-color: rgba(0, 0, 0, .7);
-  display: flex;
 }
 
 .circle-graphs-div {
-  width: 60%;
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: relative;
+  width: 60%;
 }
 
 .bar-graph-div {
-  width: 40%;
   position: relative;
+  width: 40%;
 }
 
 .circle-graph {
@@ -442,11 +453,11 @@ nav {
 }
 
 .circle-graph-2 {
+  position: relative;
   transform: rotate(45deg);
   border-top-color: rgba(0, 0, 0, .7);
   border-right-color: rgba(0, 0, 0, .7);
   border-bottom-color: rgba(0, 0, 0, .7);
-  position: relative;
 }
 
 .circle-graph-3 {
@@ -456,18 +467,18 @@ nav {
 }
 
 .graph-png {
-  width: 250px;
-  padding-top: 32px;
   display: block;
   margin: auto;
+  width: 250px;
+  padding-top: 32px;
 }
 
 .circle-graph-button {
-  transform: rotate(-45deg);
-  width: 165px;
   position: absolute;
   top: 128px;
   right: -126px;
+  transform: rotate(-45deg);
+  width: 165px;
 }
 
 .circle-graph-text {
@@ -488,27 +499,27 @@ nav {
 }
 
 .bar-graph-button {
-  width: 165px;
   display: block;
+  width: 165px;
   margin: 10px auto;
 }
 
 /*BREAK*/
 
 .break {
-  height: 25px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, .7);
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  height: 25px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .7);
 }
 
 .fa-angle-up {
-  color: #ff0;
   position: absolute;
   top: -8px;
+  color: #ff0;
 }
 
 .break hr {
@@ -531,9 +542,9 @@ th {
 
 table {
   margin: 20px;
-  background-color: rgba(255, 255, 255, .7);
   border-collapse: collapse;
   border-radius: 4px;
+  background-color: rgba(255, 255, 255, .7);
   color: rgba(0, 0, 0, .9);
 }
 
@@ -551,9 +562,9 @@ table {
 }
 
 .table-head-right p {
-  background-color: rgba(255, 255, 255, .2);
   width: 75px;
   border-radius: 4px;
+  background-color: rgba(255, 255, 255, .2);
 }
 
 .table-head-right p:hover {
@@ -563,9 +574,9 @@ table {
 }
 
 .table-hr {
-  width: 70%;
   position: absolute;
   left: 15%;
+  width: 70%;
   border: 0px;
   height: 1px;
   background-color: rgba(0, 0, 0, .1);
@@ -581,8 +592,8 @@ table {
 }
 
 .owsla-p {
-  display: inline-block;
   position: absolute;
+  display: inline-block;
   top: 32px;
   padding-left: 5px;
 }
@@ -616,11 +627,11 @@ table {
 }
 
 .table {
+  position: relative;
+  display: inline-block;
   width: 70%;
   height: 100%;
-  display: inline-block;
   box-sizing: border-box;
-  position: relative;
 }
 
 .description-div {
@@ -663,16 +674,16 @@ h5 ~ p {
 }
 
 .text {
-  width: 100%;
-  display: flex;
   position: relative;
+  display: flex;
+  width: 100%;
   background-color: rgba(0, 0, 0, .7);
 }
 
 .links {
-  width: 30%;
-  display: inline-block;
   position: relative;
+  display: inline-block;
+  width: 30%;
 }
 
 .links-div i {
@@ -682,9 +693,9 @@ h5 ~ p {
 .links button i {
   position: absolute;
   left: 12%;
-  margin-top: 4px;
-  text-align: center;
+  margin-top: 2px;
   width: 30px;
+  text-align: center;
 }
 
 .links button p {
@@ -692,14 +703,14 @@ h5 ~ p {
 }
 
 .links button {
+  display: block;
   box-sizing: border-box;
   border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
   width: 80%;
-  display: block;
   padding: 10px;
   margin: 20px auto;
   color: rgba(255,255,255,.7);
-  border-radius: 4px;
 }
 
 .links button:hover {
@@ -737,9 +748,9 @@ h5 ~ p {
 }
 
 .links-div {
+  position: relative;
   box-sizing: border-box;
   margin: 11%;
-  position: relative;
 }
 
 .links-div p {
@@ -755,22 +766,22 @@ h5 ~ p {
   display: inline-block;
   margin: 6px 0px;
   line-height: 40px;
-  background-color: rgba(255,255,255,.7);
   width: 77%;
-  color: rgba(0,0,0,.7);
-  overflow: scroll;
   padding-left: 10px;
+  overflow: scroll;
   box-sizing: border-box;
   border-radius: 4px 0 0 4px;
+  color: rgba(0,0,0,.7);
+  background-color: rgba(255,255,255,.7);
 }
 
 .links-div button {
-  width: 23%;
-  height: 40px;
-  display: inline-block;
-  padding: initial;
   position: absolute;
   right: 0;
+  display: inline-block;
+  padding: initial;
+  width: 23%;
+  height: 40px;
   background-color: rgba(244, 93, 96,.7);
   color: rgba(255,255,255,.7);
   border: none;
@@ -786,9 +797,9 @@ h5 ~ p {
 @media only screen and (max-width: 880px) {
 
   aside {
+    position: static;
     height: 211px;
     width: 100vw;
-    position: static;
     background-color: #ff0;
     border-bottom: 1px solid #C5B9BB;
   }
@@ -799,14 +810,14 @@ h5 ~ p {
 
   h2,
   h4 {
+    position: relative;
     display: inline-block;
+    padding-bottom: 0;
     font-size: 1em;
     margin: 10px 0px 10px 20px;
     text-transform: uppercase;
     color: rgba(0,0,0,.7);
     font-weight: bold;
-    position: relative;
-    padding-bottom: 0;
   }
 
   h2:hover,
@@ -834,9 +845,9 @@ h5 ~ p {
   }
 
   .aside-headers {
-    margin: 0px 18% 0px 18%;
     display: flex;
     justify-content: space-between;
+    margin: 0px 18% 0px 18%;
   }
 
   .content {
@@ -862,8 +873,8 @@ h5 ~ p {
   }
 
   .circle-graph-button {
-    top: 115px;
-    right: -87px;
+    top: 108px;
+    right: -99px;
   }
 
   .bar-graph-div {
@@ -880,18 +891,18 @@ h5 ~ p {
   }
 
   .links {
+    position: relative;
     display: flex;
     flex-direction: column;
-    position: relative;
     height: 340px;
   }
 
   .links-link-container {
+    position: absolute;
+    top: 260px;
     display: flex;
     justify-content: space-around;
     width: 100vw;
-    position: absolute;
-    top: 260px;
   }
 
   .links-link-container button {
@@ -905,14 +916,15 @@ h5 ~ p {
   }
 
   .links-div {
-    width: 33%;
     position: relative;
+    margin: 5%;
+    width: 33%;
     height: 215px;
   }
 
   .copy-link {
     position: absolute;
-    bottom: 0px;
+    bottom: 28px;
     width: 100%;
   }
 
@@ -1039,8 +1051,8 @@ h5 ~ p {
   .links-div {
     width: 94%;
     padding-bottom: 44px;
-    height: initial;
     margin-bottom: 0;
+    height: initial;
   }
 
   .links {
