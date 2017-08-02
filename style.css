@@ -354,7 +354,7 @@ header {
 
 .h1-active-button {
   width: 100px;
-  color: rgba(197,185,187,.7);
+  color: rgba(255,255,255,.7);
 }
 
 .fa-circle {
@@ -365,7 +365,8 @@ header {
 .fa-bookmark-o,
 .fa-pencil-square-o,
 .fa-trash-o {
-  color: rgba(197,185,187,.7);
+  color: rgba(255,255,255,.7);
+  margin-left: 1px;
 }
 
 .h1-button:hover .fa-bookmark-o {
