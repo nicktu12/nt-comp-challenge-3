@@ -10,4 +10,5 @@ In order to maintain order on my page, I spent a considerable amount of time pla
 <img width="653" alt="screen shot 2017-08-02 at 10 11 44 am" src="https://user-images.githubusercontent.com/26471447/28883273-0a5cec22-776b-11e7-99b9-15c7fc15fff5.png">
 
 ### My version:
-<img width="1265" alt="screen shot 2017-07-18 at 9 59 35 am" src="https://user-images.githubusercontent.com/26471447/28577067-ec07b26a-7112-11e7-9d08-4a4988e69ba4.png">
+<img width="1239" alt="screen shot 2017-08-02 at 10 11 32 am" src="https://user-images.githubusercontent.com/26471447/28883431-a477c728-776b-11e7-9d15-c5e2613bd668.png">
+
