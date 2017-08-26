@@ -31,7 +31,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position-x: -245px;
+  /*background-position-x: -245px;*/
 }
 
 button:focus {
